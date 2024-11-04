@@ -12,13 +12,21 @@
 
 	<test name="Car Loan">
 		<classes>
-			<class name="test.day3" />
+			<class name="test.day3">
+				<methods>
+					<exclude name="MobileLoginCarLoan"></exclude>
+				</methods>
+			</class>
 		</classes>
 	</test>
 
 	<test name="Home Loan">
 		<classes>
-			<class name="test.day4" />
+			<class name="test.day4">
+				<methods>
+					<include name="WebLoginHomeLoan"></include>
+				</methods>
+			</class>
 		</classes>
 	</test>
 
