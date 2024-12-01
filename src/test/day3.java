@@ -5,13 +5,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class day3 {
+	
+	//note : in TestNG when executing methods it follows the alphabetical order of method names
 
 	@Test
 	public void WebLoginCarLoan() {
 		System.out.println("WebLoginCarLoan");
 	}
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void MobileLoginCarLoan() {
 		System.out.println("MobileLoginCarLoan");
 	}

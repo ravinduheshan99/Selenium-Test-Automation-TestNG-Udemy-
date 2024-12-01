@@ -5,8 +5,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class day2 {
+	
+	//note : in TestNG when executing methods it follows the alphabetical order of method names
 
-	@Test
+	@Test(groups= {"Smoke"})
 	public void Ploan() {
 		System.out.println("Good");
 	}

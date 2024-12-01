@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 
 public class day1 {
 	
+	//note : in TestNG when executing methods it follows the alphabetical order of method names
+	
 	@Test
 	public void Demo() {
 		System.out.println("Hello");
