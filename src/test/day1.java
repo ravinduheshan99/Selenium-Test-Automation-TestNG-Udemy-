@@ -1,14 +1,10 @@
 package test;
 
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class day1 {
-	
-	@AfterTest
-	public void lastexecution() {
-		System.out.println("I will execute last");
-	}
 	
 	@Test
 	public void Demo() {
@@ -19,6 +15,17 @@ public class day1 {
 	public void SecondTest() {
 		System.out.println("Bye");
 	}
+	
+	@AfterSuite
+	public void aftersuite() {
+		System.out.println("I will execute after suite");
+	}
+	
+	@BeforeSuite
+	public void beforesuite() {
+		System.out.println("I will execute before suite");
+	}
+	
 	//Goto project name 
 	//Right Click->TestNG->Convert to testng
 	
