@@ -8,24 +8,24 @@ public class day1 {
 	
 	//note : in TestNG when executing methods it follows the alphabetical order of method names
 	
+	@BeforeSuite
+	public void beforesuite() {
+		System.out.println("I will execute before suite");
+	}
+	
 	@Test
-	public void Demo() {
-		System.out.println("Hello");
+	public void firstTest() {
+		System.out.println("firstTest-day01");
 	}
 	
 	@Test
 	public void SecondTest() {
-		System.out.println("Bye");
+		System.out.println("SecondTest-day01");
 	}
 	
 	@AfterSuite
 	public void aftersuite() {
 		System.out.println("I will execute after suite");
-	}
-	
-	@BeforeSuite
-	public void beforesuite() {
-		System.out.println("I will execute before suite");
 	}
 	
 	//Goto project name 

@@ -8,14 +8,14 @@ public class day2 {
 	
 	//note : in TestNG when executing methods it follows the alphabetical order of method names
 
-	@Test(groups= {"Smoke"})
-	public void Ploan() {
-		System.out.println("Good");
+	@BeforeTest
+	public void firstexecution() {
+		System.out.println("I will execute before test execution which contains day 2 tests");
 	}
 	
-	@BeforeTest
-	public void prerequisits() {
-		System.out.println("I will execute before test execution which contains day 2 tests");
+	@Test(groups= {"Smoke"})
+	public void secondTest() {
+		System.out.println("secondTest-day02");
 	}
 	
 	@AfterTest

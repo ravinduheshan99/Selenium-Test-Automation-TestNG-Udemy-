@@ -8,6 +8,11 @@ public class day3 {
 	
 	//note : in TestNG when executing methods it follows the alphabetical order of method names
 
+	@BeforeMethod
+	public void beforemethod() {
+		System.out.println("I will execute before every test method in day 3 class");
+	}
+	
 	@Test
 	public void WebLoginCarLoan() {
 		System.out.println("WebLoginCarLoan");
@@ -18,24 +23,19 @@ public class day3 {
 		System.out.println("MobileLoginCarLoan");
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void MobilesigninCarLoan() {
 		System.out.println("MobilesigninCarLoan");
 	}
 	
-	@Test
+	@Test(timeOut = 4000)
 	public void MobilesignoutCarLoan() {
 		System.out.println("MobilesignoutCarLoan");
 	}
 	
-	@Test
+	@Test(dependsOnMethods = "WebLoginCarLoan")
 	public void LoginAPICarLoan() {
 		System.out.println("LoginAPICarLoan");
-	}
-	
-	@BeforeMethod
-	public void beforemethod() {
-		System.out.println("I will execute before every test method in day 3 class");
 	}
 	
 	@AfterMethod
