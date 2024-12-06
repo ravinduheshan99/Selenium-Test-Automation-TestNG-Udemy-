@@ -1,6 +1,7 @@
 package test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class day3 {
@@ -12,8 +13,10 @@ public class day3 {
 		System.out.println("I will execute before every test method in day 3 class");
 	}
 	
+	@Parameters({"URL"})
 	@Test
-	public void WebLoginCarLoan() {
+	public void WebLoginCarLoan(String urlName) {
+		System.out.println(urlName);
 		System.out.println("WebLoginCarLoan");
 	}
 	

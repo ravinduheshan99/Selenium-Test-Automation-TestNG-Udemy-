@@ -20,7 +20,7 @@ public class day2 {
 	
 	@AfterTest
 	public void lastexecution() {
-		System.out.println("I will execute before test execution which contains day 2 tests");
+		System.out.println("I will execute after test execution which contains day 2 tests");
 	}
 	
 }
