@@ -6,7 +6,8 @@
 	<parameter name="URL" value="qaclickacademy.com"></parameter>
 
 	<test name="Personal Loan">
-	<parameter name="URL" value="personalloan.com"></parameter>
+		<parameter name="URL" value="personalloan.com"></parameter>
+		<parameter name="APIKey/username" value="123456"></parameter>
 		<classes>
 			<class name="test.day1">
 				<methods>
@@ -20,7 +21,7 @@
 	</test>
 
 	<test name="Car Loan">
-	<parameter name="URL" value="carloan.com"></parameter>
+		<parameter name="URL" value="carloan.com"></parameter>
 		<classes>
 			<class name="test.day4">
 				<methods>
